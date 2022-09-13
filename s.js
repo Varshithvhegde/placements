@@ -10,6 +10,73 @@ function displayLoading() {
 function hideLoading() {
     loader.classList.remove("display");
 }
+//Searching based on name
+function searchStudents() {
+    document.getElementById("student_container").innerHTML = "";
+    // student_container.innerHTML = "";
+    displayLoading();
+    const search = document.querySelector("#search").value;
+    // const url = `${base_url}?company=${search}`;
+    //Filtering the company name with real time search
+    // student_container.innerHTML = "";
+    fetch(base_url)
+        .then(response => response.json())
+        .then(characters => showCharacters(characters.data));
+    //declare an array
+    var arr = [];
+    showCharacters = characters => {
+        characters.forEach(student => {
+            //search the company with matching pattern and display the result
+            //remove the duplicates
+            if (student.Company.toLowerCase().includes(search.toLowerCase()) && !arr.includes(student.Name.toLowerCase())) {
+                arr.push(student.Name.toLowerCase());
+                const StudentDiv = document.createElement('div');
+                StudentDiv.classList.add('student');
+
+            const StudentInnerHTML = `
+            <div class="info">
+                
+                <h3 class="name">${student.Name}</h3>
+                <p class="email">${student.Company}</p>
+                <p class="email">${student.Salary}LPA</p>
+               
+            </div>
+        `;
+            StudentDiv.innerHTML = StudentDiv.innerHTML + StudentInnerHTML;
+
+            student_container.appendChild(StudentDiv);
+            }
+            hideLoading();
+            //Stop reloading the  page
+        });
+    }
+                
+
+
+    // fetch(url)
+    //     .then(response => response.json())
+    //     .then(characters => showCharacters(characters.data));
+        
+    //     showCharacters = characters => {
+    //         characters.forEach(student => {
+    //             const StudentDiv = document.createElement('div');
+    //         StudentDiv.classList.add('student');
+
+    //         const StudentInnerHTML = `
+    //                 <div class="info">
+    //                     <h2>${student.Name}</h2>
+                       
+                       
+    //                 </div>
+    //             `;
+    //             StudentDiv.innerHTML = StudentDiv.innerHTML + StudentInnerHTML;
+
+    //         student_container.appendChild(StudentDiv);
+    //         });
+    //     }
+
+}
+
 
 //function to filter students based on company
 function filterStudents() {

@@ -8,6 +8,12 @@
   </head>
   <body>
     <h1 id="heading"> MITE 2022 Placements </h1>
+    <!-- Add searching feature -->
+    
+     
+    <input type="text" id="search" placeholder="Search for a company" onkeyup=" searchStudents()">
+    <!-- <button id="search-button" onclick="searchStudents()">Search</button> -->
+
     <select id="company" onchange="filterStudents()">
         <option>ALL</option>
     </select>
@@ -113,8 +119,9 @@ h1 {
 }
 
 #company {
-    margin-top: 40px;
+    margin-top: 30px;
     margin-left: 50px;
+    margin-bottom: 20px;
     width: 200px;
     height: 30px;
     font-size: 20px;
