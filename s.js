@@ -27,7 +27,7 @@ function searchStudents() {
     var arr = [];
     showCharacters = characters => {
         characters.forEach(student => {
-            //search the company with matching pattern and display the result
+            //search the Name with matching pattern and display the result
             //remove the duplicates
             if (student.Name.toLowerCase().includes(search.toLowerCase()) && !arr.includes(student.Name.toLowerCase()) && student.Company != "Company" && student.Company != "") {
                 // flag=0;
@@ -49,38 +49,9 @@ function searchStudents() {
             student_container.appendChild(StudentDiv);
             }
             hideLoading();
-            //Stop reloading the  page
+            
         });
     }
-    // if(flag==1){
-    //     document.getElementById("student_container").innerHTML = "No results found";
-    // }
-    
-                
-
-
-    // fetch(url)
-    //     .then(response => response.json())
-    //     .then(characters => showCharacters(characters.data));
-        
-    //     showCharacters = characters => {
-    //         characters.forEach(student => {
-    //             const StudentDiv = document.createElement('div');
-    //         StudentDiv.classList.add('student');
-
-    //         const StudentInnerHTML = `
-    //                 <div class="info">
-    //                     <h2>${student.Name}</h2>
-                       
-                       
-    //                 </div>
-    //             `;
-    //             StudentDiv.innerHTML = StudentDiv.innerHTML + StudentInnerHTML;
-
-    //         student_container.appendChild(StudentDiv);
-    //         });
-    //     }
-
 }
 
 
