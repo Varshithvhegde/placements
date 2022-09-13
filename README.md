@@ -1,4 +1,4 @@
-#  Placements Details of Mangalore Institute of Technology and Engineering 2022-23
+#  [Placements Details](https://varshithvhegde.github.io/placements) of Mangalore Institute of Technology and Engineering 2022-23
 
 ## About the College
 
@@ -26,7 +26,6 @@ This is a web app which is used to display the placement details of the students
 - It is easy to use and navigate.
 - It has filters to filter the data according to the user's need.
 - You can also search the data using the search bar.
-
 
 ## Screenshots
 ![Mite](https://user-images.githubusercontent.com/80502833/189928270-c17238af-4b8d-49a9-add0-5cdab0870d5b.png)
