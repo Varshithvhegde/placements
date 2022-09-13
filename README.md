@@ -33,6 +33,15 @@ Updating......................
 
 ## How to use
 
-- Go to the [website](https://varshithvhegde/placements).
-- 
+- Go to the [website](https://varshithvhegde.me/placements/).
+- You can see the placement details of the students of the college.
+- You can filter the data according to the company .
+- You can also search the data using the search bar.
 
+## Author
+
+- [Varshith Hegde](https://varshithvhegde.github.io)
+
+## Copyright and License
+
+All the rights are reserved to the author. The code is licensed under MIT License. Data belongs to the college and is used for educational purposes only.
