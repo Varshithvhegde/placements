@@ -7,6 +7,10 @@
     
   </head>
   <body>
+    <h1 id="heading"> MITE 2022 Placements </h1>
+    <select id="company" onchange="filterStudents()">
+        <option>ALL</option>
+    </select>
     <div id='Details'></div>
     <div id="student_container" class="student-container"></div>
 	<div id="loading"></div>
@@ -86,7 +90,13 @@ h1 {
 	margin: 15px 0 7px;
 	letter-spacing: 1px;
 }
-
+#heading{
+    text-align: center;
+    color: #000;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 2rem 0;
+}
 
 #loading {
     width: 6rem;
@@ -101,6 +111,19 @@ h1 {
 #loading.display {
     visibility: visible;
 }
+
+#company {
+    margin-top: 40px;
+    margin-left: 50px;
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 1px solid #9c41f2;
+    background-color: #9c41f2;
+    color: white;
+}
+
 @keyframes spin {
     from {
         transform: rotate(0deg);
