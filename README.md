@@ -29,7 +29,7 @@ This is a web app which is used to display the placement details of the students
 
 
 ## Screenshots
-Updating......................
+![Mite](https://user-images.githubusercontent.com/80502833/189928270-c17238af-4b8d-49a9-add0-5cdab0870d5b.png)
 
 ## How to use
 
@@ -45,5 +45,3 @@ Updating......................
 ## Copyright and License
 
 All the rights are reserved to the author. The code is licensed under MIT License. Data belongs to the college and is used for educational purposes only.
-
-![frame_generic_dark (10)](https://user-images.githubusercontent.com/80502833/189928270-c17238af-4b8d-49a9-add0-5cdab0870d5b.png)
