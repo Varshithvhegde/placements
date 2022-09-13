@@ -4,6 +4,9 @@
 
 Mangalore Institute of Technology and Engineering (MITE) is a private engineering college in Mangalore, Karnataka, India. It is affiliated to Visvesvaraya Technological University, Belagavi and approved by All India Council for Technical Education (AICTE), New Delhi.The college is accredited by National Assessment and Accreditation Council (NAAC) with A grade. The college offers undergraduate and postgraduate courses in engineering and management. The college is managed by Rajalaxmi Education Trust.
 
+## Website
+
+[https://varshithvhegde.github.io/placements](https://varshithvhegde.github.io/placements)
 
 ## Technology Used
 
