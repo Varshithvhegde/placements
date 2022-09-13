@@ -15,6 +15,7 @@ function searchStudents() {
     document.getElementById("student_container").innerHTML = "";
     // student_container.innerHTML = "";
     displayLoading();
+    // var flag=1;
     const search = document.querySelector("#search").value;
     // const url = `${base_url}?company=${search}`;
     //Filtering the company name with real time search
@@ -28,7 +29,8 @@ function searchStudents() {
         characters.forEach(student => {
             //search the company with matching pattern and display the result
             //remove the duplicates
-            if (student.Company.toLowerCase().includes(search.toLowerCase()) && !arr.includes(student.Name.toLowerCase())) {
+            if (student.Name.toLowerCase().includes(search.toLowerCase()) && !arr.includes(student.Name.toLowerCase()) && student.Company != "Company" && student.Company != "") {
+                // flag=0;
                 arr.push(student.Name.toLowerCase());
                 const StudentDiv = document.createElement('div');
                 StudentDiv.classList.add('student');
@@ -50,6 +52,10 @@ function searchStudents() {
             //Stop reloading the  page
         });
     }
+    // if(flag==1){
+    //     document.getElementById("student_container").innerHTML = "No results found";
+    // }
+    
                 
 
 
