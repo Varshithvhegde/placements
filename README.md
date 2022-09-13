@@ -43,4 +43,4 @@ This is a web app which is used to display the placement details of the students
 
 ## Copyright and License
 
-All the rights are reserved to the author. The code is licensed under MIT License. Data belongs to the college and is used for educational purposes only.
+All the rights are reserved to the author. The code is licensed under [MIT](/LICENSE) License. Data belongs to the college and is used for educational purposes only.
