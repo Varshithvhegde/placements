@@ -74,6 +74,7 @@ function filterStudents() {
 
     showCharacters = characters => {
         characters.forEach(student => {
+            if(student.Company != "Company"&& student.Company != ""){
             const StudentDiv = document.createElement('div');
             StudentDiv.classList.add('student');
 
@@ -89,8 +90,12 @@ function filterStudents() {
             StudentDiv.innerHTML = StudentDiv.innerHTML + StudentInnerHTML;
 
             student_container.appendChild(StudentDiv);
+            }
         });
+
+        
         hideLoading();
+        
     }
 }
 displayLoading();
