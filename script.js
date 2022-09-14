@@ -99,6 +99,7 @@ function filterStudents() {
     }
 }
 displayLoading();
+var count=0;
 const fetchStudents = async () => {
 
    fetch(base_url)
@@ -109,6 +110,7 @@ const fetchStudents = async () => {
     showCharacters = characters => {
             characters.forEach(student => {
                 if(student.Company != "Company"&& student.Company != ""){
+
                 //add company name to the dropdown and remove duplicates
                 const company = document.querySelector("#company");
                 const option = document.createElement("option");
@@ -128,6 +130,7 @@ const fetchStudents = async () => {
             }
                 
                 if(student.Name!="Name"&& student.Name!=""){
+                    count++;
                 const StudentDiv = document.createElement('div');    
                 StudentDiv.classList.add('student');
             
@@ -146,6 +149,7 @@ const fetchStudents = async () => {
     }
    
     });
+    document.getElementById("nostudents").innerHTML = "No of students placed : " + count;
     hideLoading();
     };
         // });

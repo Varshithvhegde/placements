@@ -1,0 +1,136 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #EFEFBB;
+	background: -webkit-linear-gradient(to right, #D4D3DD, #EFEFBB);
+	background: linear-gradient(to right, #D4D3DD, #EFEFBB);
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Lato';
+	margin: 0;
+}
+
+h1 {
+	letter-spacing: 3px;
+}
+p{
+    /* Change the format of numbers apperance */
+    font-variant-numeric: tabular-nums;
+}
+
+.student-container {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: space-between;
+	justify-content: center;
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
+.student {
+	background-color: #eee;
+	border-radius: 20px;
+	box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+	margin: 10px;
+	padding: 20px;
+	text-align: center;
+}
+
+.student .img-container {
+	background-color: rgba(255, 255, 255, 0.6);
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	text-align: center;
+}
+
+.student .img-container img {
+	margin-top: 20px;
+	max-width: 90%;
+}
+
+.student .info {
+	margin-top: 20px;
+}
+
+.student .number {
+	background-color: rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	font-size: 0.8em;
+	padding: 5px 10px;
+}
+
+.student .name {
+	margin: 15px 0 7px;
+	letter-spacing: 1px;
+}
+#heading{
+    text-align: center;
+    color: #000;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 2rem 0;
+}
+
+#loading {
+    width: 6rem;
+    height: 6rem;
+    border: 15px solid #f3f3f3;
+    border-top: 15px solid #9c41f2;
+    border-radius: 100%;
+    margin-top: 300px;
+    visibility: hidden;
+    animation: spin 1s infinite linear;
+}
+#loading.display {
+    visibility: visible;
+}
+#search{
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    margin: 10px;
+    padding: 5px;
+}
+#company {
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 1px solid #9c41f2;
+    background-color: #9c41f2;
+    color: white;
+}
+
+#nostudents{
+    margin-left: 50px;
+    font-size: 20px;
+    color: #9c41f2;
+    font-weight: 700;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@media screen and (max-width: 768px) {
+    .student-container {
+        max-width: 100%;
+    }
+    .student {
+        width: 100%;
+    }
+}
