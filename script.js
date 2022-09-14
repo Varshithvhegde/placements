@@ -8,10 +8,15 @@ function displayLoading() {
     }, 5000);
 }
 function hideLoading() {
+   
     loader.classList.remove("display");
+    //Hide the loading  div which is causing extra space
+    loader.style.display = "none";
+    
 }
 //Searching based on name
 function searchStudents() {
+    loader.style.display = "block";
     document.getElementById("student_container").innerHTML = "";
     // student_container.innerHTML = "";
     displayLoading();
@@ -57,6 +62,8 @@ function searchStudents() {
 
 //function to filter students based on company
 function filterStudents() {
+    document.querySelector("#search").value="";
+    loader.style.display = "block";
     student_container.innerHTML = "";
     if(document.querySelector("#company").value == "ALL"){
         fetchStudents();
