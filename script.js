@@ -108,6 +108,7 @@ function filterStudents() {
 }
 displayLoading();
 var count=0;
+var array=[];
 const fetchStudents = async () => {
 
    fetch(base_url)
@@ -137,8 +138,11 @@ const fetchStudents = async () => {
                 });
             }
                 
-                if(student.Name!="Name"&& student.Name!=""){
+                if(student.Name!="Name"&& student.Name!=""&& !array.includes(student.Name.toLowerCase())){
                     count++;
+                    array.push(student.Name.toLowerCase());
+                
+                    
                 const StudentDiv = document.createElement('div');    
                 StudentDiv.classList.add('student');
             
