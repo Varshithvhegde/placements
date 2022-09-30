@@ -1,5 +1,6 @@
 const loader = document.querySelector("#loading");
-const base_url = "https://script.google.com/macros/s/AKfycbxvZk6Wxi0TAUH8x6oBmTxO6vXhNoIbSpVoL2LdsanF6PjSiN-czA6j712Yzs50fVfgig/exec";
+// const base_url = "https://script.google.com/macros/s/AKfycbxvZk6Wxi0TAUH8x6oBmTxO6vXhNoIbSpVoL2LdsanF6PjSiN-czA6j712Yzs50fVfgig/exec";
+const base_url="https://script.google.com/macros/s/AKfycbxZVBy7wEAAkHzddPcIlWp-_T1CFDV_XbWr3JU9ZBnGuqg5CZDe1znw4o6wYkRpwnaJUg/exec"
 function displayLoading() {
     loader.classList.add("display");
     // to stop loading after some time
@@ -34,9 +35,9 @@ function searchStudents() {
         characters.forEach(student => {
             //search the Name with matching pattern and display the result
             //remove the duplicates
-            if (student.Name.toLowerCase().includes(search.toLowerCase()) && !arr.includes(student.Name.toLowerCase()) && student.Company != "Company" && student.Company != "") {
+            if (student.Name.toLowerCase().includes(search.toLowerCase()) && !arr.includes(student.SINO) && student.Company != "Company" && student.Company != "") {
                 // flag=0;
-                arr.push(student.Name.toLowerCase());
+                arr.push(student.SINO);
                 const StudentDiv = document.createElement('div');
                 StudentDiv.classList.add('student');
 
